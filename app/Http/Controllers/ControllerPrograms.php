@@ -6,19 +6,13 @@ use Illuminate\Http\Request;
 
 class ControllerPrograms extends Controller
 {
-    public function index(){
-        echo "Ini halaman dari programs awal";
-    }
-
     public function magang(){
-        echo "Ini halaman dari programs magang";
+        return redirect("https://www.educastudio.com/program/karir");
     }
-
     public function karir(){
-        echo "Ini halaman dari programs karir";
+        return redirect("https://www.educastudio.com/program/magang");
     }
-    
     public function kunjunganIndustri(){
-        echo "Ini halaman dari programs kunjungan industri";
+        return redirect("https://www.educastudio.com/program/kunjungan-industri");
     }
 }

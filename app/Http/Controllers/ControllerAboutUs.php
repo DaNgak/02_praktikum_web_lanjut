@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ControllerAboutUs extends Controller
 {
     public function index(){
-        echo "Ini adalah About-us page";
+        return redirect("https://www.educastudio.com/about-us");
     }
 }

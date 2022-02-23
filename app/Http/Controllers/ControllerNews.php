@@ -6,8 +6,11 @@ use Illuminate\Http\Request;
 
 class ControllerNews extends Controller
 {
-    public function index($berita = "Tidak ada"){
-        echo "Ini halaman berita = " . $berita;
+    public function index($params = null){
+        if ($params != null){
+            return redirect("https://www.educastudio.com/news/" . $params);
+        } else {
+            return redirect("https://www.educastudio.com/news");
+        } 
     }
-
 }

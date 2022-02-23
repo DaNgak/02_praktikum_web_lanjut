@@ -6,20 +6,16 @@ use Illuminate\Http\Request;
 
 class ControllerProducts extends Controller
 {
-    public function index($product){
-        echo "Ini halaman dari product " . $product;
-    }
-
     public function category1(){
-        echo "Halaman Category Marbel Edu Games";
+        return redirect("https://www.educastudio.com/category/marbel-edu-games");
     }
     public function category2(){
-        echo "Halaman Category Marbel And Friends Kids Games";
+        return redirect("https://www.educastudio.com/category/marbel-and-friends-kids-games");
     }
     public function category3(){
-        echo "Halaman Category Riri Story Books";
+        return redirect("https://www.educastudio.com/category/riri-story-books");
     }
     public function category4(){
-        echo "Halaman Category Kolak Kids Songs";
+        return redirect("https://www.educastudio.com/category/kolak-kids-songs");
     }
 }
