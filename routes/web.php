@@ -13,13 +13,13 @@ use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 // Prak 1
-Route::get('/', function () {
-    echo "Selamat Datang";
-});
+// Route::get('/', function () {
+//     echo "Selamat Datang";
+// });
 
-Route::get('/about', function () {
-    echo "Nama : Aria Pratama Effendi</br>NIM : 2041720112";
-});
+// Route::get('/about', function () {
+//     echo "Nama : Aria Pratama Effendi</br>NIM : 2041720112";
+// });
 
 // Route::get('/articles/{id}', function ($id) {
 //     echo "Halaman Artikel dengan ID " . $id;
@@ -27,9 +27,9 @@ Route::get('/about', function () {
 
 // Prak 2
 // Nomer 2
-// Route::get("/", [PageController::class, 'index']);
-// Route::get("/about", [PageController::class, 'about']);
-// Route::get("/articles/{id}", [PageController::class, 'articles']);
+Route::get("/", [PageController::class, 'index']);
+Route::get("/about", [PageController::class, 'about']);
+Route::get("/articles/{id}", [PageController::class, 'articles']);
 
 // Nomer 3
 // Route::get("/", [HomeController::class, 'index']);
