@@ -27,14 +27,14 @@ use Illuminate\Support\Facades\Route;
 
 // Prak 2
 // Nomer 2
-Route::get("/", [PageController::class, 'index']);
-Route::get("/about", [PageController::class, 'about']);
-Route::get("/articles/{id}", [PageController::class, 'articles']);
+// Route::get("/", [PageController::class, 'index']);
+// Route::get("/about", [PageController::class, 'about']);
+// Route::get("/articles/{id}", [PageController::class, 'articles']);
 
 // Nomer 3
-// Route::get("/", [HomeController::class, 'index']);
-// Route::get("/about", [AboutController::class, 'index']);
-// Route::get("/articles/{id}", [ArticlesController::class, 'index']);
+Route::get("/", [HomeController::class, 'index']);
+Route::get("/about", [AboutController::class, 'index']);
+Route::get("/articles/{id}", [ArticlesController::class, 'index']);
 
 // Prak 3
 // Route::get("/", [ControllerHome::class, 'index']);
