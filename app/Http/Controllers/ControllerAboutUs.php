@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ControllerAboutUs extends Controller
 {
     public function index(){
-        echo "Ini adalah Aku raja Mexico";
+        echo "Ini adalah About-us page";
     }
 }
